@@ -1,0 +1,29 @@
+---
+import SocialMedia from "../SocialMedia/SocialMedia.astro";
+
+const profile = {
+  name: "Muhammad Zaki Dzulfikar",
+  desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil nam inventore aperiam, officiis dicta dignissimos vero debitis? Officia, laborum aliquam.",
+  profession: ["Web developer", "UI/UX Designer", "Student"],
+  img: "./profile.jpg",
+};
+---
+
+<main class="pb-2 max-w-screen-lg mx-auto font-poppins">
+  <div class="flex flex-col mx-auto p-10 text-center">
+    <img
+      src={profile.img}
+      alt={profile.name}
+      class="w-40 rounded-full m-auto"
+    />
+    <h1 class="font-bold pt-3 text-xl sm:text-2xl md:text-3xl">
+      {profile.name}
+    </h1>
+    <h2 class="text-slate-500 mt-2 font-medium text-xs sm:text-sm md:text-base">
+      Hey 😁 I'm Zaki and I'm a MERN Stack Programmer and UI/UX Designer 🤌<br
+      />I'm currently studying at Universitas Jenderal Soedirman majoring in
+      informatics
+    </h2>
+    <SocialMedia />
+  </div>
+</main>
